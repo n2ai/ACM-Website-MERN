@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+.Banner{
+  width: 100vw;
+  height: 10vh;
+  background-color: #F3D25C;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.backgroundVideo{
+  width: 100vw;
+  height: 50vh;
+  background-color: gray;
+}
+
+.backgroundVideo video{
+
+}
