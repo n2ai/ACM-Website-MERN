@@ -4,6 +4,7 @@ import Banner from './components/Banner'
 import Navigator from './components/Navigator';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BackgroundVideo from './components/BackgroundVideo';
+import StaffRow from './components/StaffRow';
 function App() {
   
 
@@ -12,6 +13,8 @@ function App() {
       <Banner />
       <Navigator />
       <BackgroundVideo />
+      <br />
+      <StaffRow />
     </div>
   )
 }
