@@ -5,7 +5,7 @@ export default function Banner(){
         <>
             <section className="Banner">
                 
-                <img src="../../images/ACMlogo.png" alt="ACMlogo" ></img>
+                <img src="../../public/ACMlogo.png" alt="ACMlogo" ></img>
                 
             </section>
         </>
