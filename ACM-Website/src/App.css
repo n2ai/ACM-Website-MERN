@@ -43,7 +43,7 @@ body{
 
 .events{
   
-  width: 90%;
+  width: 70%;
   height: 95%;
   
   /**overflow-y: hidden;**/
@@ -61,6 +61,7 @@ body{
   position: relative;
   border-radius: 20px;
   margin-left: 10px;
+  margin-right: 20px;
   display: inline-block;
   overflow: hidden;
   color: orange;
@@ -120,3 +121,69 @@ p, h1{
   background-color: transparent;
 }
 
+/**Hai Trinh StaffsSection**/
+.StaffsSection{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+
+.StaffsSlide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.card-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50vw;
+  perspective: 1000px;
+}
+
+.StaffCard{
+  width: 15%;
+  height: 35%;
+  position: relative;
+  transition: all 1s linear;
+  transform-style: preserve-3d;
+}
+
+.StaffCard img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.StaffCard-front, .StaffCard-back{
+
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
+  position: absolute;
+}
+.StaffCard-back{
+  color: yellow;
+  z-index: 1;
+  transform: rotateY(180deg);
+  border-color: linear-gradient(0deg, rgba(57,66,66,1) 0%, rgba(231,168,34,1) 100%);
+  background: linear-gradient(147deg, #000000 0%, #434343 74%);;
+}
+
+.StaffCard-front{
+  z-index: 2;
+  backface-visibility: hidden;
+}
+
+.StaffCard:hover{
+  transform: rotateY(180deg);
+}
