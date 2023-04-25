@@ -6,13 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BackgroundVideo from './components/BackgroundVideo';
 import StaffRow from './components/StaffRow';
 import EventsSection from './components/EventsSection';
+import AdminBanner from './components/AdminBanner';
 import Home from './components/Home';
 import { createBrowserRouter, createRoutesFromElements, Route, Link, Outlet, RouterProvider } from 'react-router-dom';
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<Root />}>
-        <Route index element={<Home/>}></Route>
+        <Route index element={<EventsSection/>}></Route>
       </Route>
     )
   )
