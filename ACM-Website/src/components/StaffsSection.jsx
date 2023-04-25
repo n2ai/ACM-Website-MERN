@@ -19,7 +19,6 @@ function StaffsSection() {
         </div>
         
       </Carousel.Item>
-
     </Carousel>
   );
 }
