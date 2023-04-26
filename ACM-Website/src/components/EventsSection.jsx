@@ -5,6 +5,16 @@ import EventsCard from "./EventsCard"
 import dataBase from "./testData"
 export default function EventsSection(){
     const [cardState, setCardState] = useState(dataBase)
+    //Algorithm to check the number of the state
+    let filteredEvents = []
+    if(dataBase.length > 6){
+        let minList = dataBase.map(event=>event.Date.Date.parse())
+        filteredEvents = dataBase.filter(event => event.Date)
+    }
+    const [eventsState, setEventsState] = useState(filteredEvents)
+
+    
+
     let cardList = []
     cardList = cardState.map(card=>{
         return (<EventsCard imgURL={card.imgUrl}
@@ -14,6 +24,7 @@ export default function EventsSection(){
     })
     return (
         <>  
+        <section className="eventsSection">
             <div className="eventsSection-title">
                 <h1>Events</h1>
             </div>
@@ -22,6 +33,7 @@ export default function EventsSection(){
                     {cardList}
                 </div>
             </section>
+        </section>
             
         </>
     )

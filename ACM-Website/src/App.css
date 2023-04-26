@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;300&display=swap');
 *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  
+  
+}
+
+::-webkit-scrollbar{
+  height: 0.5em;
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track{
+  background: black;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  
+  border-radius: 100vw;
 }
 
 body{
@@ -13,7 +33,7 @@ body{
 .Banner{
   width: 100vw;
   height: 10vh;
-  background-color: #f8f0d1;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -26,19 +46,32 @@ body{
 }
 
 /**Events Section**/
+.eventsSection{
+  background-color: black;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
 .eventsSection-title{
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
+
+.eventsSection-title h1{
+  border-bottom: solid white;
+}
+
 .eventsSection-body{
   width: 100vw;
   height: 50vh;
-  background-color: #f8f0d1;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .events{
@@ -46,7 +79,7 @@ body{
   width: 70%;
   height: 95%;
   
-  /**overflow-y: hidden;**/
+  overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
   overflow-y: hidden;
@@ -57,9 +90,9 @@ body{
   width: 230px;
   height: 100%;
   background-color: white;
-  border: 3px solid black;
+  
   position: relative;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-left: 10px;
   margin-right: 20px;
   display: inline-block;
@@ -90,8 +123,8 @@ body{
   flex-direction: column;
   justify-content: center;
   transition: 1.2s;
-  border:3px;
-  border-radius: 20px;
+  
+  border-radius: 15px;
 }
 
 .events-card-title{
@@ -123,11 +156,21 @@ p, h1{
 
 /**Hai Trinh StaffsSection**/
 .StaffsSection{
-  margin-top: 15px;
-  margin-bottom: 15px;
+  
+
+  background-color: black;
 }
 
+.StaffsSection-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
+.StaffsSection-title h1{
+  border-bottom: solid white;
+}
 
 .StaffsSlide{
   display: flex;
@@ -156,17 +199,13 @@ p, h1{
 .StaffCard img{
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .StaffCard-front, .StaffCard-back{
-
   height: 100%;
   width: 100%;
-  background-color: bisque;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   border-radius: 10px;
   
   position: absolute;
@@ -175,13 +214,16 @@ p, h1{
   color: yellow;
   z-index: 1;
   transform: rotateY(180deg);
-  border-color: linear-gradient(0deg, rgba(57,66,66,1) 0%, rgba(231,168,34,1) 100%);
+  
   background: linear-gradient(147deg, #000000 0%, #434343 74%);;
 }
 
 .StaffCard-front{
   z-index: 2;
   backface-visibility: hidden;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: orange;
 }
 
 .StaffCard:hover{
@@ -193,121 +235,7 @@ p, h1{
   box-sizing: border-box;
 }
 
-body{
-  width: 100%;
-  height: 100vh;
-  font-family: 'roboto', sans-serif;
-}
 
-.Banner{
-  width: 100vw;
-  height: 10vh;
-  background-color: #f8f0d1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.backgroundVideo{
-  width: 100vw;
-  height: 50vh;
-  background-color: gray;
-}
-
-/**Events Section**/
-.eventsSection-title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.eventsSection-body{
-  width: 100vw;
-  height: 50vh;
-  background-color: #f8f0d1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.events{
-  
-  width: 90%;
-  height: 95%;
-  
-  overflow-y: hidden;
-  overflow-x: scroll;
-  white-space: nowrap;
-  overflow-y: hidden;
-}
-
-
-.events-card{
-  width: 230px;
-  height: 100%;
-  background-color: white;
-  border: 3px solid black;
-  position: relative;
-  border-radius: 20px;
-  margin-left: 10px;
-  display: inline-block;
-  overflow: hidden;
-  color: orange;
-  
-}
-
-.events-card:hover .events-card-body{
-  right: 0;
-}
-
-.events-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.events-card-body{
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: -100%;
-  position: absolute;
-  backdrop-filter: blur(10px);
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1.2s;
-  border:3px;
-  border-radius: 20px;
-}
-
-.events-card-title{
-  text-transform: uppercase;
-  
-}
-
-.events-card-subtitle{
-  text-transform: capitalize;
-  
-}
-
-
-p, h1{
-  white-space: pre-wrap;
-}
-
-.events-card-redirect{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: orange;
-  cursor: pointer;
-  border: solid orange;
-  outline: none;
-  width: 120px;
-  background-color: transparent;
-}
 
 /**Begin Admin Panel CSS**/
 
@@ -359,3 +287,78 @@ p, h1{
 }
 
 
+/**Gael's Footer Section **/
+.grandparent{
+  background-color: rgb(189, 189, 189);
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+.parent{
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(189, 189, 189);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: solid black;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 15px;
+}
+
+
+#parent3{
+  border: none;
+}
+
+
+#child1{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.container{
+  display: flex;
+  
+  align-items: center;
+  gap: 10px;
+  padding: 0.5%;
+}
+
+.sponsors{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+.icon-container{
+  display: flex;
+  gap: 5px;
+  padding-top: 8px;
+  align-items: center;
+}
+.icon{
+  width: 15px;
+  height: 15px;
+}
+
+.copyright{
+  text-align: center;
+  background-color: rgb(189, 189, 189);
+  color: rgba(0, 0, 0, 0.404);
+  padding-bottom: 10px;
+}
+
+.slogan{
+  font-size: 30px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 100;
+}
