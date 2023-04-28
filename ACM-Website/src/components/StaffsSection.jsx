@@ -5,27 +5,48 @@ function StaffsSection() {
 
   return (
     <section className='StaffsSection'>
-      <div className='StaffsSection-title'>
-          <h1>Meet our officers</h1>
+      <div className='StaffsSection-wrapper'>
+        <div className='StaffsSection-card'>
+          <div className='StaffsSection-card-img'> 
+            <img src="" alt='profile-img'></img>
+          </div>
+          <div className='StaffsSection-card-title'>
+            <p>Title</p>
+          </div>
+          <div className='StaffsSection-card-name'></div>
+            <p>Name</p>
+        </div>
+        <div className='StaffsSection-card'>
+          <div className='StaffsSection-card-img'> 
+            <img src="" alt='profile-img'></img>
+          </div>
+          <div className='StaffsSection-card-title'>
+            <p>Title</p>
+          </div>
+          <div className='StaffsSection-card-name'></div>
+            <p>Name</p>
+        </div>
+        <div className='StaffsSection-card'>
+          <div className='StaffsSection-card-img'> 
+            <img src="" alt='profile-img'></img>
+          </div>
+          <div className='StaffsSection-card-title'>
+            <p>Title</p>
+          </div>
+          <div className='StaffsSection-card-name'></div>
+            <p>Name</p>
+        </div>
+        <div className='StaffsSection-card'>
+          <div className='StaffsSection-card-img'> 
+            <img src="" alt='profile-img'></img>
+          </div>
+          <div className='StaffsSection-card-title'>
+            <p>Title</p>
+          </div>
+          <div className='StaffsSection-card-name'></div>
+            <p>Name</p>
+        </div>
       </div>
-      <Carousel  >
-      <Carousel.Item className='StaffsSlide'>
-        <div className="card-wrapper">
-          <StaffCard />
-          <StaffCard/>
-          <StaffCard/>
-        </div>
-        
-      </Carousel.Item>
-      <Carousel.Item className='StaffsSlide'>
-        <div className="card-wrapper">
-          <StaffCard/>
-          <StaffCard/>
-          <StaffCard/>
-        </div>
-
-      </Carousel.Item>
-    </Carousel>
     </section>
   );
 }

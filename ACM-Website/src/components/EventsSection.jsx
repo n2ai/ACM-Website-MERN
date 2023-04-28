@@ -13,7 +13,7 @@ export default function EventsSection(){
     }
     const [eventsState, setEventsState] = useState(filteredEvents)
 
-    
+    let date = Date.parse('')
 
     let cardList = []
     cardList = cardState.map(card=>{
