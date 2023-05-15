@@ -4,7 +4,6 @@ import Banner from './components/Banner'
 import Navigator from './components/Navigator';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BackgroundVideo from './components/BackgroundVideo';
-import StaffRow from './components/StaffRow';
 import EventsSection from './components/EventsSection';
 import AdminBanner from './components/AdminBanner';
 import Home from './components/Home';

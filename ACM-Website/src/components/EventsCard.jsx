@@ -20,3 +20,4 @@ export default function EventsCard({imgURL,title,description,redirect}){
     </div>
     )
 }
+

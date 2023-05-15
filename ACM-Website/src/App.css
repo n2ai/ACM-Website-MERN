@@ -67,7 +67,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 150px;
 }
 
@@ -346,4 +346,35 @@ p, h1{
   font-size: 30px;
   font-family: 'Lexend', sans-serif;
   font-weight: 100;
+}
+
+/**Sponsors Section Hai Trinh 5-15-2023**/
+.sponsors-section{
+  background-color: black;
+}
+
+.sponsors-section h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  color: white;
+}
+
+.sponsors-section-items-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors-section-item{
+  width: 30vh;
+  height: 30vh;
+  object-fit: contain;
+}
+
+.sponsors-section-contact {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
