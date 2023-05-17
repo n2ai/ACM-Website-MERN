@@ -14,8 +14,12 @@ export default function SponsorsSection({sponsorList}){
 
                 </div>
                 <div className="sponsors-section-contact">
-                    <h3>Interested in being our sponsors?</h3>
-                    <button>Contact us!</button>
+                    <div className="sponsors-section-contact-quote">
+                        <h3>Interested in being our sponsors?</h3>
+                    </div>
+                    <div className="sponsors-section-contact-button">
+                        <button>Contact Us</button>
+                    </div>
                 </div>
             </div>
         </>

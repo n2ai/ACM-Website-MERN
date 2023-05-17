@@ -4,7 +4,7 @@ import EventsSection from "./EventsSection";
 import StaffsSection from './StaffsSection';
 import SponsorsSection from "./SponsorsSection";
 import Footer from "./Footer";
-import FollowUS from   "./FollowUs"
+import FollowUs from   "./FollowUs"
 //test sponsors section
 import sponsorsData from "./sponsorsData"
 export default function Home(){
@@ -14,6 +14,7 @@ export default function Home(){
             <EventsSection/>
             <StaffsSection/>
             <SponsorsSection/>
+            <FollowUs/>
         </>
     )
 }

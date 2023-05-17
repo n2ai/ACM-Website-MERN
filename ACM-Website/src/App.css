@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   
-  
 }
 
 ::-webkit-scrollbar{
@@ -351,6 +350,7 @@ p, h1{
 /**Sponsors Section Hai Trinh 5-15-2023**/
 .sponsors-section{
   background-color: black;
+  color: white;
 }
 
 .sponsors-section h1{
@@ -358,7 +358,7 @@ p, h1{
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  color: white;
+  
 }
 
 .sponsors-section-items-wrapper{
@@ -373,8 +373,59 @@ p, h1{
   object-fit: contain;
 }
 
-.sponsors-section-contact {
-  display: flexbox;
+.sponsors-section-contact-quote {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.sponsors-section-contact-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors-section-contact-button button{
+  width: 200px;
+  height: 70px;
+  margin-top: 50px;
+  border: solid white;  
+  color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.sponsors-section-contact-button button:hover{
+  transform: scale(1.2);
+}
+
+/**Follow us section - Hai Trinh 17-5-2023**/
+.followUs-section{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: white;
+  background-color: black;
+}
+
+.followUs-section-title{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followUs-section-medias{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.followUs-section-medias .mediaIcon{
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
